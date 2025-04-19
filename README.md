@@ -34,7 +34,7 @@ A full-stack web application to upload CSV files, parse them on the backend, and
 
 ### Upload Page:
 - Upload CSV files from your computer.
-
+![Alt text](https://github.com/vik802207/Segwase/blob/main/img/Screenshot%20(371).png?raw=true)
 ![Alt text](https://github.com/vik802207/Segwase/blob/main/img/Screenshot%20(365).png?raw=true)
 ![Alt text](https://github.com/vik802207/Segwase/blob/main/img/Screenshot%20(366).png?raw=true)
 ![Alt text](https://github.com/vik802207/Segwase/blob/main/img/Screenshot%20(367).png?raw=true)
@@ -42,10 +42,6 @@ A full-stack web application to upload CSV files, parse them on the backend, and
 ![Alt text](https://github.com/vik802207/Segwase/blob/main/img/Screenshot%20(369).png?raw=true)
 ![Alt text](https://github.com/vik802207/Segwase/blob/main/img/Screenshot%20(370).png?raw=true)
 
-### Data Table Page:
-- Filter and search dynamically.
-
-![Data Table Page](path-to-data-table-page-image)
 
 ## 📝 How It Works
 
@@ -69,16 +65,15 @@ IN,Android,Facebook,2000,90
 
 ## 🌐 Live Demo
 
-🚀 **Live App** – Deployed frontend (Netlify) + backend (Render)  
-## [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://magical-cat-74ec58.netlify.app/)
-Replace with your actual deployed URLs
+🚀 **Live App** – Deployed frontend (vercel) + backend (Render)  
+## [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://segwaseproject.vercel.app/)
+
 
 ## 👨‍💻 Author
 
 **Vikash Gupta**  
 📍 **IIIT Nagpur**  
 💼 **Frontend Engineer** • **DSA Enthusiast**  
-🔗 [LinkedIn](#) | [Portfolio](#)  
 
 ## 🪪 License
 
