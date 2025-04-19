@@ -14,7 +14,7 @@ const UploadPage = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:8000/upload', formData);
+      const res = await axios.post('https://segwase.onrender.com/upload', formData);
       localStorage.setItem('segwiseData', JSON.stringify(res.data));
       alert('Upload successful!');
       navigate('/data');
