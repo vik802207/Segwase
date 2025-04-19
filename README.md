@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Segwise CSV Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application to upload CSV files, parse them on the backend, and display searchable, sortable, and filterable tables on the frontend. Built using **React**, **Express**, and **Multer** for handling file uploads.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- 📤 **Upload multiple CSV files**: Users can upload multiple CSV files at once.
+- 🔁 **Backend parsing**: CSV files are parsed using the **csvtojson** package to convert them into JSON format.
+- 📦 **Data storage**: Parsed data is stored in **localStorage** for easy access and viewing.
+- 🔍 **Global search**: Perform a global search across all fields of the CSV data.
+- 🎛️ **Dynamic filters**: Automatically generates dynamic filters based on CSV column headers for advanced filtering.
+- 📈 **Interactive table**: Displays data in a responsive, sortable, and filterable table.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **Backend**: Express.js
+- **File Handling**: Multer
+- **CSV Parsing**: csvtojson
+- **Storage**: localStorage
+- **Styling**: Custom CSS (Responsive)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📥 Installation
 
-### `npm test`
+### Frontend Setup:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   git clone https://github.com/vik802207/segwise-csv-viewer.git
+   cd segwise
+   npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Upload Page:
+- Upload CSV files from your computer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(338).png?raw=true)
 
-### `npm run eject`
+### Data Table Page:
+- Filter and search dynamically.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Data Table Page](path-to-data-table-page-image)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Upload one or more .csv files** from the Upload page.
+2. Files are sent to the **Express backend** using **axios**.
+3. The backend uses **csvtojson** to convert the CSV files into JSON.
+4. The final parsed data is returned and saved in **browser localStorage**.
+5. The **data table page** loads this data:
+   - Dynamically generates filter dropdowns from the column names.
+   - Allows **global search** and filtering.
+   - Displays all data in a **styled table**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧪 Example CSV Structure
 
-## Learn More
+Here is an example of the CSV format that works with the application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+country,os,ad_network,impressions,clicks
+US,Android,Facebook,1000,50
+UK,iOS,Google,1500,70
+IN,Android,Facebook,2000,90
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌐 Live Demo
 
-### Code Splitting
+🚀 **Live App** – Deployed frontend (Netlify) + backend (Render)  
+## [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://magical-cat-74ec58.netlify.app/)
+Replace with your actual deployed URLs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👨‍💻 Author
 
-### Analyzing the Bundle Size
+**Vikash Gupta**  
+📍 **IIIT Nagpur**  
+💼 **Frontend Engineer** • **DSA Enthusiast**  
+🔗 [LinkedIn](#) | [Portfolio](#)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🪪 License
 
-### Making a Progressive Web App
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute with attribution.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
