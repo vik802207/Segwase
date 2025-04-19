@@ -1,0 +1,16 @@
+/* Main container for the entire page */
+.data-page-container {
+    min-height: 100vh;
+    background-color: #f8fafc; /* Light gray background */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title of the page */
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7970ff; /* Dark text for header */
+    margin-bottom: 20px;
+  }
+  

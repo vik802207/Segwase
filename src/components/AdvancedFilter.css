@@ -1,0 +1,136 @@
+/* General Container Styles */
+.advanced-filter-container {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    background: rgba(195, 206, 255, 0.75);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.6s ease-out;
+  }
+  .advanced-filter-container:hover {
+    transform: translateY(-6px) rotateX(1deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Slide Animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Filter Item Container */
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+  }
+  
+  /* Label */
+  .filter-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #070606;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+  .filter-label:hover {
+    color: #a6ffc2;
+    cursor: pointer;
+  }
+  
+  /* Input & Select */
+  .filter-select, .filter-input {
+    padding: 16px 24px;
+    border: 2px solid #ddd;
+    border-radius: 14px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(245, 245, 245, 0.8);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fancy Dropdown */
+  .filter-select {
+    appearance: none;
+    background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgMTAgNSIgd2lkdGg9IjEwIiBmaWxsPSIjZmY0MDgxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01IDVsLTUtNSAxaDhsLTUgNXoiLz48L3N2Zz4=") no-repeat right 16px center;
+    background-size: 12px;
+  }
+  
+  /* Focus */
+  .filter-select:focus, .filter-input:focus {
+    border-color: #a4e4ed;
+    box-shadow: 0 0 12px rgba(255, 64, 129, 0.3);
+    outline: none;
+  }
+  
+  /* Placeholder */
+  .filter-input::placeholder {
+    color: #000000;
+    transition: color 0.3s ease;
+  }
+  .filter-input:focus::placeholder {
+    color: transparent;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  /* Gradient Apply Button */
+  /* Base Button Styles */
+.button {
+    padding: -4px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px; /* Soft rectangle */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    min-width: 160px; /* ensures rectangle width */
+  }
+  
+  /* Apply Button - Gradient Pinkish-Red */
+  .apply-button {
+    background:blue;
+    color: #fff;
+  }
+  .apply-button:hover {
+    background: blue;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(255, 65, 108, 0.3);
+  }
+  .apply-button:active {
+    transform: scale(0.97);
+  }
+  
+  /* Clear Button - Cool Grey */
+  .clear-button {
+    background:blue;
+    color: #fff;
+  }
+  .clear-button:hover {
+    background:blue;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(144, 164, 174, 0.3);
+  }
+  .clear-button:active {
+    transform: scale(0.97);
+  }
+  

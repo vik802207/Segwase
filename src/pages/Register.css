@@ -1,0 +1,96 @@
+/* Register.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #5f62ff, #7d7bfe); /* Warm gradient background */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mcp-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .mcp-register-card {
+    background-color: #570bb4; /* Vibrant red-orange color for the card */
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #feb47b; /* Soft yellow-orange border */
+  }
+  
+  .mcp-register-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(255, 111, 97, 0.3); /* Stronger shadow on hover */
+  }
+  
+  .mcp-register-card h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtext {
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 0.9rem 1rem;
+    margin: 0.6rem 0;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #f8f8f8;
+  }
+  
+  input:focus {
+    border-color: #feb47b; /* Yellow-orange border on focus */
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 180, 123, 0.2);
+  }
+  
+  .button {
+    margin-top: 1rem;
+    padding: 0.9rem 1.2rem;
+    background-color: #feb47b; /* Soft yellow-orange button */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff6f61; /* Vibrant red-orange on hover */
+    box-shadow: 0 6px 18px rgba(255, 111, 97, 0.3);
+  }
+  
+  @media (max-width: 480px) {
+    .mcp-register-card {
+      padding: 2rem 1.5rem;
+    }
+  }
+  

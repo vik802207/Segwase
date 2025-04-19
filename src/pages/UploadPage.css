@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+
+
+.upload-box {
+  background: rgb(103, 131, 209);
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.upload-box h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #000000, #0083b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upload-box input[type="file"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px dashed #cbd5e0;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  margin-bottom: 2rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.upload-box input[type="file"]:hover {
+  background-color: #edf2f7;
+  border-color: #90cdf4;
+}
+
+.upload-box button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(38, 132, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(38, 132, 255, 0.4);
+}

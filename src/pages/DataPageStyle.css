@@ -1,0 +1,35 @@
+/* Main container for the entire page */
+.data-page-container {
+    min-height: 100vh;
+    background-color: #f8fafc; /* Light gray background */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title of the page */
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1f2937; /* Dark text for header */
+    margin-bottom: 20px;
+  }
+  
+  /* Add styling for the download button */
+  .download-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: fixed;
+    bottom: 20px; /* Position it 20px from the bottom */
+    right: 20px;  /* Position it 20px from the right */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .download-btn:hover {
+    background-color: #45a049;
+  }
+  

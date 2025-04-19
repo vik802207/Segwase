@@ -1,0 +1,280 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f4f7fb, #e0e7ff);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Data Table Container */
+.datatable-container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.datatable-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.datatable-container h2:hover {
+  color: #6200ea;
+}
+
+/* Table Styling */
+.datatable-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #95e4ffc1;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #ff0000;
+  transition: transform 0.3s ease;
+}
+
+.datatable-table:hover {
+  transform: scale(1.02);
+}
+
+.datatable-table th,
+.datatable-table td {
+  padding: 20px 24px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.datatable-table th {
+  background: linear-gradient(135deg, #6200ea, #7c4dff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.datatable-table th:hover {
+  background: #4b00c2;
+}
+
+.datatable-table tbody tr {
+  background: #d6efee;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.datatable-table tbody tr:hover {
+  background: #beffe6;
+  transform: translateY(-4px);
+}
+
+.datatable-table tbody tr:active {
+  background: #ff3b3b;
+}
+
+/* No Data Available */
+.datatable-no-data {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+/* Pagination Controls */
+.datatable-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .datatable-left,
+  .datatable-center,
+  .datatable-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .datatable-left select {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-left: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+  
+  .datatable-left select:hover {
+    border-color: #6200ea;
+    background: #f4f7fb;
+  }
+  
+  .datatable-left label {
+    font-weight: 600;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+  
+  .datatable-center {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .datatable-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .datatable-right button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6200ea, #7c4dff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 0 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .datatable-right button:hover {
+    background: #4b00c2;
+    transform: translateY(-3px);
+  }
+  
+  .datatable-right button:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .datatable-pagination-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #d70000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .datatable-pagination-text span {
+    margin-right: 8px;
+  }
+  
+  .datatable-pagination-text .page-info {
+    font-weight: 600;
+    color: #6200ea;
+    margin: 0 8px;
+  }
+  
+  /* Animation for Pagination Controls */
+  .datatable-footer {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: modalFadeIn 0.4s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.modal-body {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-close:hover {
+  color: #ff416c;
+}
+
+/* Hover Effect for Modal Close */
+.modal-close:focus {
+  outline: none;
+  transform: scale(1.1);
+}
