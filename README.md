@@ -73,7 +73,7 @@ IN,Android,Facebook,2000,90
 
 **Vikash Gupta**  
 📍 **IIIT Nagpur**  
-💼 **Frontend Engineer** • **DSA Enthusiast**  
+💼 **Full Stack Developer** • **DSA Enthusiast**  
 
 ## 🪪 License
 
